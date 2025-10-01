@@ -30,7 +30,7 @@ function updateViewGraph() {
     for(let temperatureRegistration of model.temperatureRegistrations){
         html += /*HTML*/`
             <li>
-                ${temperatureRegistration.temperature}
+                ${temperatureRegistration.temperature}°C registrert
                 ${new Date(temperatureRegistration.date).toLocaleDateString()}
             </li>
         `;
