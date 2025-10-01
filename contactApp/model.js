@@ -1,23 +1,28 @@
 const model = {
     app: { // del 1 - overordnet view state
-        currentPage: 'registration', // 'graph',
+        currentPage: '', // '',
         //currentUser: 'terje', // null
     },
-                 // dette er "inputs"
+    // dette er "inputs"
     viewState: { // del 2 - view state per side
-        registrationPage: {
-            temperature: '',
-            date: '',
+        addContactPage: {
+            name: '',
+            phone: '',
+            email: '',
         },
-        graphPage: {
-            fromDate: '',
-            toDate: '',
+        editContactPage: {
+            name: '',
+            phone: '',
+            email: '',
         },
-    },     
+        contactsPage: {
+            search: '',
+        }
+    },
+
     // del 3 - app state - selve dataene
-    temperatureRegistrations: [
-        { temperature: 10, date: '2025-10-01'},
-        { temperature: 11, date: '2025-09-30'},
-        { temperature: 12, date: '2025-09-29'},
+    contacts: [
+        { name: 'John Doe', email: 'john@mail.com', phone: '123-456-7890' },
+        { name: 'Jane Smith', email: 'janehn@mail.com', phone: '987-654-3210' },
     ],
 };
