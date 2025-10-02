@@ -1,5 +1,4 @@
-function registerTemperature()
-{
+function registerTemperature() {
     // Flere måter å kopiere et objekt på
     // 1: 
     const newRegistration = {
@@ -18,7 +17,7 @@ function registerTemperature()
     updateView();
 }
 
-function goTo(page){
+function goTo(page) {
     model.app.currentPage = page;
     updateView();
 }
