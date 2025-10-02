@@ -36,6 +36,11 @@ const model = {
             { userID: 1, name: 'Marie', img: '', favorites: [3], activitiesID: [1], },
             { userID: 2, name: 'Bjarne', img: '', favorites: [1], activitiesID: [3], },
         ],
+        favorites: [
+            { userID: 1, activityID: 3 },
+            { userID: 1, activityID: 4 },
+            { userID: 2, activityID: 4 },
+        ],
         activities: [
             {
                 activityID: 1,
@@ -53,6 +58,19 @@ const model = {
                     { userID: '', comment: '', stars: null, },
                 ],
             },
-        ]
+        ],
+        comments: [
+            {
+                activityID: 1,
+                text: '',
+                userID: 1,
+                stars: 3,
+            },
+            {
+                text: '',
+                userID: 1,
+                stars: 3,
+            },
+        ],
     },
 }
